@@ -7,8 +7,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LangUniversity.Models
 {
+
     public class Student
     {
+
+
+
         public int ID { get; set; }
         [Required]
         [StringLength(50)]

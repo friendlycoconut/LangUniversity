@@ -10,16 +10,23 @@ using LangUniversity.DAL;
 using LangUniversity.Models;
 using PagedList;
 using System.Data.Entity.Infrastructure;
+using Octokit;
+
 
 namespace LangUniversity.Controllers
 {
     public class StudentController : Controller
     {
+    
+
+
         private SchoolContext db = new SchoolContext();
+   
 
         // GET: Student
         public ViewResult Index(string sortOrder, string currentFilter, string searchString, int? page)
         {
+            
             ViewBag.CurrentSort = sortOrder;
             ViewBag.NameSortParm = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
             ViewBag.DateSortParm = sortOrder == "Date" ? "date_desc" : "Date";

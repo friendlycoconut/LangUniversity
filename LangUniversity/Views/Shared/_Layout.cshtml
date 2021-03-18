@@ -22,14 +22,15 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Домашняя страница", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Информация", "About", "Home")</li>
-                    <li>@Html.ActionLink("Связаться", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Homepage", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Statistics", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     <li>@Html.ActionLink("Students", "Index", "Student")</li>
                     <li>@Html.ActionLink("Courses", "Index", "Course")</li>
+                    <li>@Html.ActionLink("OfficeAssignments", "Index", "OfficeAssignments")</li>
                     <li>@Html.ActionLink("Instructors", "Index", "Instructor")</li>
                     <li>@Html.ActionLink("Departments", "Index", "Department")</li>
-                    <li><a  asp-controller="Department" asp-action="Index">Department</a></li>
+                    <li><a asp-controller="Department" asp-action="Index">Department</a></li>
                 </ul>
             </div>
         </div>
@@ -38,7 +39,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Lang university</p>
+            <p>&copy; @DateTime.Now.Year - Lang university - Partial View E</p>
         </footer>
     </div>
 

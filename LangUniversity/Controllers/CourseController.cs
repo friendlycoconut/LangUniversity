@@ -16,6 +16,13 @@ namespace LangUniversity.Controllers
     {
         private SchoolContext db = new SchoolContext();
 
+
+        [ChildActionOnly]
+        public ActionResult RenderMenu()
+        {
+            return PartialView("FooterBar");
+        }
+
         // GET: Course
         public ActionResult Index()
         {
